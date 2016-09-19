@@ -6,8 +6,8 @@ import Slider from '../components/preferenceSlider'
 import Address from '../components/address'
 import fetchScores from '../actions/fetchScores'
 
-const categories = ['Safety', 'Education', 'Transportation', 'Parks'];
-const attributes = ["accidents", "crime", "schools", "subways", "bikes", "parks"]
+const categories = ['Safety', 'Food', 'Transportation', 'Parks'];
+const attributes = ["accidents", "crime", "restaurants", "subways", "bikes", "parks"]
 const PreferencesSlidersContainer = class extends Component {
   componentWillMount(){
     this.props.fetchScores(sessionStorage.address)

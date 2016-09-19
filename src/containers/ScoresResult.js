@@ -17,7 +17,7 @@ var text
 
 const ScoresResult = class extends Component {
   handleSubmit(event){
-    const categories = ['Safety', 'Education', 'Transportation', 'Parks'];
+    const categories = ['Safety', 'Food', 'Transportation', 'Parks'];
     event.preventDefault()
     var preferences = {}
     for (var i = 0; i < categories.length; i++) {
@@ -44,7 +44,7 @@ const ScoresResult = class extends Component {
     const dictionary = {
       "accidents": "Safety",
       "crime": "Safety",
-      "schools": "Education",
+      "restaurants": "Food",
       "subways": "Transportation",
       "bikes": "Transportation",
       "parks": "Parks"
