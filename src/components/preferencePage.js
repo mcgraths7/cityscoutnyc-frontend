@@ -10,7 +10,7 @@ import Map from './map'
 
 class PreferencePage extends Component{
   handleSubmit(event){
-    const categories = ['Safety', 'Food', 'Transportation', 'Parks'];
+    const categories = ['Safety', 'Food', 'Transportation', 'Parks', 'Nightlife'];
     event.preventDefault()
     var preferences = {}
     for (var i = 0; i < 4; i++) {
