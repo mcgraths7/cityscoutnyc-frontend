@@ -165,7 +165,7 @@
         <option value="$PROJECT_DIR$/src/components/chart.js" />
         <option value="$PROJECT_DIR$/src/components/my_chart.js" />
         <option value="$PROJECT_DIR$/src/components/scoreGraph.js" />
-        <option value="$PROJECT_DIR$/src/actions/fetchScores.js" />
+        <option value="$PROJECT_DIR$/src/actions/getScores.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/reducers/index.js" />
@@ -558,7 +558,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/fetchScores.js">
+    <entry file="file://$PROJECT_DIR$/src/actions/getScores.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
@@ -724,7 +724,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/search.js" />
     <entry file="file://$PROJECT_DIR$/src/containers/preferences_sliders_container.js" />
     <entry file="file://$PROJECT_DIR$/src/components/preference_slider.js" />
-    <entry file="file://$PROJECT_DIR$/src/actions/fetchScores.js">
+    <entry file="file://$PROJECT_DIR$/src/actions/getScores.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />

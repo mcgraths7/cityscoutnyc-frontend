@@ -4,13 +4,13 @@ import {bindActionCreators} from 'redux'
 import getPreferences from '../actions/getPreferences'
 import Slider from '../components/preferenceSlider'
 import Address from '../components/address'
-import fetchScores from '../actions/fetchScores'
+import getScores from '../actions/getScores'
 
 const categories = ['Safety', 'Food', 'Transportation', 'Parks'];
 const attributes = ["accidents", "crime", "restaurants", "subways", "bikes", "parks"]
 const PreferencesSlidersContainer = class extends Component {
   componentWillMount(){
-    this.props.fetchScores(sessionStorage.address)
+    this.props.getScores(sessionStorage.address)
   }
   componentWillReceiveProps(nextProps){
     var scores = nextProps.scores.data
@@ -44,7 +44,7 @@ const PreferencesSlidersContainer = class extends Component {
 };
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({getPreferences, fetchScores}, dispatch)
+  return bindActionCreators({getPreferences, getScores}, dispatch)
 }
 
 function mapStateToProps(state) {

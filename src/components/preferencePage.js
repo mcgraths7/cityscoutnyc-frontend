@@ -5,7 +5,7 @@ import { browserHistory } from 'react-router'
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 import getPreferences from '../actions/getPreferences'
-import fetchScores from '../actions/fetchScores'
+import getScores from '../actions/getScores'
 import Map from './map'
 
 class PreferencePage extends Component{
@@ -48,7 +48,7 @@ class PreferencePage extends Component{
 }
 
 function mapDispatchToProps(dispatch) {
-  return bindActionCreators({getPreferences, fetchScores}, dispatch)
+  return bindActionCreators({getPreferences, getScores}, dispatch)
 }
 
 function mapStateToProps(state) {

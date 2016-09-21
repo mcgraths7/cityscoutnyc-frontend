@@ -4,7 +4,7 @@ import {connect} from 'react-redux'
 import GeoSuggest from 'react-geosuggest'
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 import getAddress from '../actions/getAddress'
-import fetchScores from '../actions/fetchScores'
+import getScores from '../actions/getScores'
 import getLocation from '../actions/getLocation'
 
 // onSuggestSelect is triggered when a suggest is selected. Location object contains lat long.
@@ -37,7 +37,7 @@ function mapStateToProps(state){
 }
 
 function mapDispatchToProps(dispatch){
-  return bindActionCreators({fetchScores, getAddress, getLocation}, dispatch)
+  return bindActionCreators({getScores, getAddress, getLocation}, dispatch)
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(SubmitAddressContainer)
