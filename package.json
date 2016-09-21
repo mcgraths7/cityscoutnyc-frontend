@@ -2,7 +2,8 @@
   "name": "city_scout_react_redux",
   "version": "0.0.1",
   "engines": {
-    "node": "4.5.0"
+    "node": "4.5.0",
+    "npm": "3.10.3"
   },
   "private": true,
   "devDependencies": {
