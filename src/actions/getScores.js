@@ -8,7 +8,7 @@ function getScores(address){
   const response = Axios.get(url)
 
   return {
-    type: 'FETCH_SCORES',
+    type: 'GET_SCORES',
     payload: response
   }
 }
