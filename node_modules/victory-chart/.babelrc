@@ -1,3 +1,0 @@
-{
-  "extends": "builder-victory-component/config/babel/.babelrc"
-}
