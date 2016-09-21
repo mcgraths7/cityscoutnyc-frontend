@@ -17,7 +17,7 @@ var text
 
 const ScoresResult = class extends Component {
   handleSubmit(event){
-    const categories = ['Safety', 'Food', 'Transportation', 'Parks'];
+    const categories = ['Safety', 'Food', 'Transportation', 'Parks', 'Nightlife'];
     event.preventDefault()
     var preferences = {}
     for (var i = 0; i < categories.length; i++) {
@@ -47,7 +47,8 @@ const ScoresResult = class extends Component {
       "restaurants": "Food",
       "subways": "Transportation",
       "bikes": "Transportation",
-      "parks": "Parks"
+      "parks": "Parks",
+      "bars": "Nightlife"
     }
 
     var scores = {}
