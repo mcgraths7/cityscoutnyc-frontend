@@ -77,7 +77,6 @@ const ScoresResult = class extends Component {
       return Math.floor(score / totalWeight)
     })
     totalScore = Math.floor(totalScore / totalWeight)
-
     return(
       <div className="container-fluid">
         <TotalScoreBox totalScore={totalScore}/>

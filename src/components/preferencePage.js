@@ -13,7 +13,7 @@ class PreferencePage extends Component{
     const categories = ['Safety', 'Food', 'Transportation', 'Parks', 'Nightlife'];
     event.preventDefault()
     var preferences = {}
-    for (var i = 0; i < 4; i++) {
+    for (var i = 0; i < categories.length; i++) {
 
       let value = parseInt(event.target.children[i].children[1].children[0].value, 10)
       let category = document.getElementById(`${categories[i]}`).id
