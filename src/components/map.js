@@ -7,13 +7,7 @@ export default class Map extends Component {
       <section style={{display: "flex"}}>
         <GoogleMapLoader
           containerElement={
-            <div
-              // {...this.props}
-              style={{
-                height: '500px',
-                width: '500px'
-              }}
-            />
+            <div style={ { height: '500px', width: '500px' } } />
           }
           googleMapElement={
             <GoogleMap

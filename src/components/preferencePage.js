@@ -10,16 +10,17 @@ import Map from './map'
 
 class PreferencePage extends Component{
   handleSubmit(event){
-    const categories = ['Safety', 'Food', 'Transportation', 'Parks', 'Nightlife'];
     event.preventDefault()
+    const categories = ['Safety', 'Food', 'Transportation', 'Parks', 'Nightlife']
     var preferences = {}
-    for (var i = 0; i < categories.length; i++) {
 
-      let value = parseInt(event.target.children[i].children[1].children[0].value, 10)
-      let category = document.getElementById(`${categories[i]}`).id
-      preferences[category] = value
-      sessionStorage["preferences " + category] = value
-    }
+    categories.forEach(function(category, index) {
+      let value = parseInt(event.target.children[index].children[1].children[0].value, 10),
+          cat   = document.getElementById(`${category}`).id
+
+      preferences[cat] = value
+      sessionStorage["preferences " + cat] = value 
+    })
     this.props.getPreferences(preferences)
     browserHistory.push('/results')
   }

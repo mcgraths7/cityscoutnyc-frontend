@@ -1,22 +1,21 @@
-import React, {Component} from 'react';
-import SubmitAddressContainer from '../containers/submitAddressContainer';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import React, {Component} from 'react'
+import SubmitAddressContainer from '../containers/submitAddressContainer'
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 import {browserHistory} from 'react-router'
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 import getAddress from '../actions/getAddress'
 import getLocation from '../actions/getLocation'
 
-
-var text
 class LandingPage extends Component{
   handleSubmit(event) {
-    console.log(this.props)
-    text = event.label;
-    var location = event.location;
-    this.props.getAddress(text);
+    let text = event.label,
+        location = event.location
+
+    this.props.getAddress(text)
+    this.props.getLocation(location)
+
     sessionStorage.address = text
-    this.props.getLocation(location);
     browserHistory.push('/preferences')
   }
 
